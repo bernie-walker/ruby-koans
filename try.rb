@@ -12,6 +12,10 @@ class Human
   include Animal
   LEGS = 2
 
+  def self.speak
+    "hello"
+  end
+
   def get_legs
     LEGS
   end
@@ -20,4 +24,5 @@ end
 human = Human.new
 
 puts human.get_legs
+puts Human.speak
 puts Animal.legs

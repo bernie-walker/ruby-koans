@@ -1,8 +1,23 @@
+module Animal
+  LEGS = 4
 
-sides = ["a", "b", "c"]
+  def self.legs
+    LEGS
+  end
 
-si = sides.each_with_index do |el, i|
-  "#{1} #{el}"
+
 end
 
-puts si == sides
+class Human
+  include Animal
+  LEGS = 2
+
+  def get_legs
+    LEGS
+  end
+end
+
+human = Human.new
+
+puts human.get_legs
+puts Animal.legs

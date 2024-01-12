@@ -44,3 +44,10 @@ def method_with_varargs(*args)
 end
 
 # puts method_with_varargs(5, one: 1, two: 2).inspect
+
+x = Hash.new(0)
+x[:ber] += 1
+x[:ver] += 2
+puts x.inspect
+x[:next] += 1
+puts x.inspect
